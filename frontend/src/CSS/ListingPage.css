@@ -1,0 +1,113 @@
+/* Container */
+.listing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+  /* position: relative; */
+}
+
+/* Form box */
+.listing-form {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top headings */
+.listing-back {
+  position: absolute;
+  
+  top: 2rem;
+  left: 2rem;
+  cursor: pointer;
+  color: #007bff;
+  font-size: 1rem;
+   background-color: lightblue;
+  /* border: 2px solid grey; */
+ width: 6.5rem;
+ height: 2.5rem;
+  padding: 0.5rem;
+
+ 
+  border-radius: 4px;
+}
+
+.listing-heading {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #007bff;
+  background-color: aliceblue;
+   padding: 0.5rem;
+  border-radius: 4px;
+}
+
+/* Labels & Inputs */
+.listing-form label {
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.listing-form input[type="text"],
+.listing-form input[type="number"],
+.listing-form input[type="file"],
+.listing-form textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.listing-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Button */
+.listing-form button {
+  margin-top: 2rem;
+  padding: 0.75rem;
+ 
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.listing-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .listing-form {
+    padding: 1.2rem;
+  }
+
+  .listing-back,
+  .listing-heading {
+    font-size: 0.9rem;
+  }
+
+  .listing-form input,
+  .listing-form textarea,
+  .listing-form button {
+    font-size: 0.95rem;
+  }
+}
